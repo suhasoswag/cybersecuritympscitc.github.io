@@ -7,27 +7,27 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #000; /* Dark background for matrix contrast */
+      background-color: #000;
       color: #c8fff9;
       margin: 0;
       padding: 0;
-      overflow-y: auto; /* Allow scrolling */
+      overflow-y: auto; 
     }
 
     canvas {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 0; /* stays behind everything */
+      z-index: 0; 
     }
 
     header, nav, section, footer {
       position: relative;
-      z-index: 1; /* content on top of matrix */
+      z-index: 1;
     }
 
  header {
-  background-color: #004d4d; /* Darker header color */
+  background-color: #004d4d;
   text-align: center;
   padding: 40px 20px;
   color: white;
@@ -165,7 +165,7 @@
       <p><strong>ID:</strong> 2013FE051</p>
       <p><strong>Institution:</strong> Mohammadpur Preparatory School & College</p>
       <p><strong>Version:</strong> English</p>
-      <p><strong>Wing:</strong> Girls</p>
+      <p><strong>Wing:</strong> Girls'</p>
     </div>
   </section>
 
