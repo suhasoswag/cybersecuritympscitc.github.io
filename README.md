@@ -27,13 +27,13 @@
       z-index: 1;
     }
 
- header {
-  background-color: #004d4d;
-  text-align: center;
-  padding: 40px 20px;
-  color: white;
-  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
-}
+    header {
+    background-color: #004d4d;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+    }
 
     nav {
       background-color: #002626;
@@ -172,7 +172,7 @@
 
 
 
-  <script>
+    <script>
     function showSection(id) {
       document.querySelectorAll('section').forEach(section => {
         section.classList.remove('active');
@@ -220,6 +220,6 @@
     };
 
     setInterval(draw, 1000 / state.fps);
-  </script>
-</body>
+    </script>
+    </body>
 </html>
