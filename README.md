@@ -140,7 +140,7 @@
     <p>Cybersecurity consists of all the technologies and practices that keep computer systems and electronic data safe.</p>
     <p>Everything is connected by computers and the internet — communication, entertainment, transportation, shopping, medicine, and more. A large amount of personal information is stored in these services, which is why cybersecurity is critical. Cyberattacks can disrupt, damage, or destroy systems and lead to identity theft, extortion, and data loss.</p>
 
-    <img src="https://i.postimg.cc/501Yr3nf/cybersecurity.jpg" alt="Online Image">
+  <img src="https://i.postimg.cc/501Yr3nf/cybersecurity.jpg" alt="Online Image">
 
     <h2>Why is it necessary?</h2>
     <p>Cybersecurity keeps people and organizations safe from hackers, fraud, and digital crimes. As cyberattacks become more frequent, cybersecurity professionals are in high demand to protect our personal and national security.</p>
