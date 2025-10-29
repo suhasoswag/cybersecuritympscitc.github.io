@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <title>Cyber Security</title>
     <style>
     body {
@@ -14,7 +14,7 @@
       padding: 0;
       overflow-y: auto;  /* scroll */
     }
-
+    
     canvas {
       position: fixed;
       top: 0;
