@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Cyber Security</title>
-  <style>
+    <title>Cyber Security</title>
+    <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #000; /* bg */
