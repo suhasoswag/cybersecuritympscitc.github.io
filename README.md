@@ -200,10 +200,6 @@
     </div>
   </section>
 
-  <footer>
-    <p>© <span>Cyber Security Project</span> 2025</p>
-  </footer>
-
   <script>
     function showSection(id) {
       document.querySelectorAll('section').forEach(section => {
