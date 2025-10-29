@@ -1,41 +1,45 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Security</title>
 
- <title>Cyber Security</title>
- <style>
+  <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #000; /* bg */
+      background-color: #000;
       color: #c8fff9;
       margin: 0;
       padding: 0;
-      overflow-y: auto;  /* scroll */
+      overflow-y: auto;
     }
-    
- canvas {
+
+    canvas {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 0;  /* piche thakbe */
+      z-index: 0;
+      pointer-events: none;
     }
 
-header, nav, section, footer {
+    header,
+    nav,
+    section,
+    footer {
       position: relative;
       z-index: 1;
     }
-    
- header {
-    background-color: #004d4d;
-    text-align: center;
-    padding: 40px 20px;
-    color: white;
-    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+
+    header {
+      background-color: #002f2f;
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
     }
 
- nav {
+    nav {
       background-color: #002626;
       display: flex;
       justify-content: center;
@@ -53,7 +57,8 @@ header, nav, section, footer {
       cursor: pointer;
     }
 
-    nav a:hover {
+    nav a:hover,
+    nav a.active {
       color: #ffffff;
       text-shadow: 0 0 10px #00ffff, 0 0 20px #00cccc;
     }
@@ -75,11 +80,18 @@ header, nav, section, footer {
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(15px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       color: #00ffff;
       text-shadow: 0 0 15px #00cccc;
     }
@@ -123,6 +135,7 @@ header, nav, section, footer {
     }
   </style>
 </head>
+
 <body>
   <canvas id="canvas"></canvas>
 
@@ -132,19 +145,36 @@ header, nav, section, footer {
   </header>
 
   <nav>
-    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('home')" class="active">Home</a>
     <a onclick="showSection('contact')">Contact</a>
   </nav>
 
   <section id="home" class="active">
     <h2>What is Cyber Security?</h2>
-    <p>Cybersecurity consists of all the technologies and practices that keep computer systems and electronic data safe.</p>
-    <p>Everything is connected by computers and the internet — communication, entertainment, transportation, shopping, medicine, and more. A large amount of personal information is stored in these services, which is why cybersecurity is critical. Cyberattacks can disrupt, damage, or destroy systems and lead to identity theft, extortion, and data loss.</p>
+    <p>
+      Cybersecurity consists of all the technologies and practices that keep
+      computer systems and electronic data safe.
+    </p>
+    <p>
+      Everything is connected by computers and the internet — communication,
+      entertainment, transportation, shopping, medicine, and more. A large
+      amount of personal information is stored in these services, which is why
+      cybersecurity is critical. Cyberattacks can disrupt, damage, or destroy
+      systems and lead to identity theft, extortion, and data loss.
+    </p>
 
-    <img src="https://i.postimg.cc/501Yr3nf/cybersecurity.jpg" alt="Online Image">
+    <img
+      src="https://i.postimg.cc/501Yr3nf/cybersecurity.jpg"
+      alt="Online Image"
+    />
 
     <h2>Why is it necessary?</h2>
-    <p>Cybersecurity keeps people and organizations safe from hackers, fraud, and digital crimes. As cyberattacks become more frequent, cybersecurity professionals are in high demand to protect our personal and national security.</p>
+    <p>
+      Cybersecurity keeps people and organizations safe from hackers, fraud,
+      and digital crimes. As cyberattacks become more frequent, cybersecurity
+      professionals are in high demand to protect our personal and national
+      security.
+    </p>
 
     <h2>Ways to Implement Cybersecurity</h2>
     <ul>
@@ -170,26 +200,32 @@ header, nav, section, footer {
     </div>
   </section>
 
+  <footer>
+    <p>© <span>Cyber Security Project</span> 2025</p>
+  </footer>
 
-
-    <script>
+  <script>
     function showSection(id) {
       document.querySelectorAll('section').forEach(section => {
         section.classList.remove('active');
       });
+      document.querySelectorAll('nav a').forEach(link => {
+        link.classList.remove('active');
+      });
       document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
     }
 
     // Matrix Background Script
     const state = {
       fps: 30,
-      color: "#00ffcc",
-      charset: "0123456789ABCDEF",
+      color: '#00ffcc',
+      charset: '0123456789ABCDEF',
       size: 20
     };
 
-    const canvas = document.getElementById("canvas");
-    const ctx = canvas.getContext("2d");
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
 
     let w, h, p;
     const resize = () => {
@@ -200,11 +236,11 @@ header, nav, section, footer {
       p = Array(Math.ceil(w / state.size)).fill(0);
     };
 
-    window.addEventListener("resize", resize);
+    window.addEventListener('resize', resize);
     resize();
 
     const draw = () => {
-      ctx.fillStyle = "rgba(0, 0, 0, 0.08)";
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
       ctx.fillRect(0, 0, w, h);
       ctx.fillStyle = state.color;
       ctx.font = `${state.size}px monospace`;
@@ -219,7 +255,8 @@ header, nav, section, footer {
       }
     };
 
- setInterval(draw, 1000 / state.fps);
-</script>
+    setInterval(draw, 1000 / state.fps);
+  </script>
 </body>
 </html>
+
