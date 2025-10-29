@@ -7,18 +7,18 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #000;
+      background-color: #000; /* bg */
       color: #c8fff9;
       margin: 0;
       padding: 0;
-      overflow-y: auto; 
+      overflow-y: auto;  /* scroll */
     }
 
     canvas {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 0; 
+      z-index: 0;  /* piche thakbe */
     }
 
     header, nav, section, footer {
