@@ -1,11 +1,11 @@
 <!DOCTYPE html> 
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  <title>Cyber Security</title>
-    <style>
+ <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #000; /* bg */
@@ -26,8 +26,8 @@ header, nav, section, footer {
       position: relative;
       z-index: 1;
     }
-
-    header {
+    
+ header {
     background-color: #004d4d;
     text-align: center;
     padding: 40px 20px;
@@ -35,7 +35,7 @@ header, nav, section, footer {
     box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
     }
 
-    nav {
+ nav {
       background-color: #002626;
       display: flex;
       justify-content: center;
@@ -219,7 +219,7 @@ header, nav, section, footer {
       }
     };
 
-    setInterval(draw, 1000 / state.fps);
-    </script>
-    </body>
+ setInterval(draw, 1000 / state.fps);
+</script>
+</body>
 </html>
