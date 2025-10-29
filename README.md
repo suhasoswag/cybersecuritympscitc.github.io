@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html> 
+<html lang="en">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cyber Security</title>
+ <title>Cyber Security</title>
     <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -15,14 +15,14 @@
       overflow-y: auto;  /* scroll */
     }
     
-    canvas {
+ canvas {
       position: fixed;
       top: 0;
       left: 0;
       z-index: 0;  /* piche thakbe */
     }
 
-    header, nav, section, footer {
+header, nav, section, footer {
       position: relative;
       z-index: 1;
     }
