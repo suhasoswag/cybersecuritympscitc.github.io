@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyber Security</title>
-
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -134,47 +134,21 @@
     }
   </style>
 </head>
-
 <body>
   <canvas id="canvas"></canvas>
-
   <header>
     <h1>Cyber Security</h1>
     <p>Why being aware of every click matters</p>
   </header>
-
   <nav>
-    <a onclick="showSection('home')" class="active">Home</a>
-    <a onclick="showSection('contact')">Contact</a>
+    <a onclick="showSection('home')" class="active">Home</a> <a onclick="showSection('contact')">Contact</a>
   </nav>
-
   <section id="home" class="active">
     <h2>What is Cyber Security?</h2>
-    <p>
-      Cybersecurity consists of all the technologies and practices that keep
-      computer systems and electronic data safe.
-    </p>
-    <p>
-      Everything is connected by computers and the internet — communication,
-      entertainment, transportation, shopping, medicine, and more. A large
-      amount of personal information is stored in these services, which is why
-      cybersecurity is critical. Cyberattacks can disrupt, damage, or destroy
-      systems and lead to identity theft, extortion, and data loss.
-    </p>
-
-    <img
-      src="https://i.postimg.cc/501Yr3nf/cybersecurity.jpg"
-      alt="Online Image"
-    />
-
+    <p>Cybersecurity consists of all the technologies and practices that keep computer systems and electronic data safe.</p>
+    <p>Everything is connected by computers and the internet — communication, entertainment, transportation, shopping, medicine, and more. A large amount of personal information is stored in these services, which is why cybersecurity is critical. Cyberattacks can disrupt, damage, or destroy systems and lead to identity theft, extortion, and data loss.</p><img src="https://i.postimg.cc/501Yr3nf/cybersecurity.jpg" alt="Online Image">
     <h2>Why is it necessary?</h2>
-    <p>
-      Cybersecurity keeps people and organizations safe from hackers, fraud,
-      and digital crimes. As cyberattacks become more frequent, cybersecurity
-      professionals are in high demand to protect our personal and national
-      security.
-    </p>
-
+    <p>Cybersecurity keeps people and organizations safe from hackers, fraud, and digital crimes. As cyberattacks become more frequent, cybersecurity professionals are in high demand to protect our personal and national security.</p>
     <h2>Ways to Implement Cybersecurity</h2>
     <ul>
       <li>Use strong, unique passwords and update them regularly.</li>
@@ -185,7 +159,6 @@
       <li>Backup important files regularly.</li>
     </ul>
   </section>
-
   <section id="contact">
     <h2>Contact Information</h2>
     <div class="contact-info">
@@ -198,7 +171,6 @@
       <p><strong>Wing:</strong> Girls'</p>
     </div>
   </section>
-
   <script>
     function showSection(id) {
       document.querySelectorAll('section').forEach(section => {
@@ -254,4 +226,3 @@
   </script>
 </body>
 </html>
-
